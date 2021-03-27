@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Buhari Ahmed Alhassan</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .spacer-y {
+            height: 50px;
+        }
+        .centered {
+            text-align: center;
+        }
+        .grid1{
+            grid-template-columns: 70% 30%;   
+        }
+        .grid2 {
+            grid-template-columns: 30% 70%;
+        }
+        .grid1, .grid2 {
+            display: grid;
+            width: 70%;
+            margin: 0 auto; 
+            grid-gap: 5px;
+            margin-bottom: 5px;   
+        }
+        .media, .tech, .email, .phone {
+            display: grid;
+            background: red;
+            border-radius: 5px; 
+        }
+        .media, .tech {
+            grid-template-columns: 40px 40px 40px 40px;
+            justify-content: space-between;
+            padding: 10px 50px 0px 35px;
+        }
+        .email, .phone {
+            grid-template-columns: 40px 150px;
+            padding: 10px 20px;
+        }
+        p {
+            padding-left: 10px;
+            font-weight: 600;
+            color: black;
+        }
+        @media all and (max-width : 768px) {
+            p {
+                color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="spacer-y"></div>
+    <h2 class="text-red centered"><u>CONTACT &AMP PROFILES</u></h2>
+    <div class="spacer-y"></div>
+    <div class="grid1">
+        <div class="media">
+            <a href=""><img src="./assets/icons/facebook.svg" alt="FB"></a>
+            <a href=""><img src="./assets/icons/instagram.svg" alt="IG"></a>
+            <a href=""><img src="./assets/icons/twitter.svg" alt="Twitter"></a>
+            <a href=""><img src="./assets/icons/linkedin.svg" alt="LinkedIn"></a>
+        </div>
+        <div class="phone">
+            <a href=""><img src="./assets/icons/phone-alt.svg" alt=""></a>
+            <p>+234-8145044481</p>
+        </div>
+    </div>
+    <div class="grid2">
+        <div class="email">
+            <a href="mailto:buhari.alhassan0@gmail.com"><img src="./assets/icons/envelope.svg"alt="GMail"></a>
+            <p>Buhari.alhassan0@gmail.com</p>
+        </div>
+        <div class="tech">
+            <a href=""><img src="./assets/icons/github.svg" alt="GitHub"></a>
+            <a href=""><img src="./assets/icons/discord.svg" alt="Discord"></a>
+            <a href=""><img src="./assets/icons/whatsapp.svg" alt="WhatsApp"></a>
+            <a href=""><img src="./assets/icons/slack.svg" alt="Slack"></a>
+        </div>
+    </div>
+</body>
+</html>

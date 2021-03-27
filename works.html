@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Works | Buhari Ahmed Alhassan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    p {
+        font-size: 40px;
+    }
+    .loading {
+        animation-name: load;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    .duration02 {
+        animation-duration: .2s;
+    }
+    .duration06 {
+        animation-duration: .6s;
+    }
+    .duration08 {
+        animation-duration: .8s;
+    }
+    @keyframes load {
+	0% {
+        opacity: 0;
+    }
+	100% {
+        opacity: 1;
+    }	
+}
+</style>
+<body>
+    <div class="text-red text-large">
+       <p>Coming Soon
+           <span>
+               <i class="loading duration10 delay02">.</i>
+               <i class="loading duration10 delay06">.</i>
+               <i class="loading duration10 delay08">.</i>
+            </span>
+        </p> 
+    </div>
+</body>
+</html>

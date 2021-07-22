@@ -212,6 +212,7 @@ p {
     width: 80%;
     padding-left: 10px;
     padding-right: 10px;
+    margin: 0 auto;
 }
 .underline {
     background-color: red;

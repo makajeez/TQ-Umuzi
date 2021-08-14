@@ -1,0 +1,259 @@
+body {
+    font-family: Semibold, Times, serif;
+    background-color: black;
+    color: white;
+    height: 100%;
+}
+a { 
+    text-decoration: none;
+}
+.text-red {
+    color: red;
+}
+.text-white {
+    color: white;
+}
+.text-large {
+    font-size: 25px;
+}
+div.mobile {
+    position: absolute;
+    right: 10px;
+}
+.desktop {
+    width: fit-content;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.greet {
+    position: absolute;
+    top: 150px;
+    font-size: 40px;
+    animation: appear 1s ease 0.1s;
+}
+@keyframes appear {
+	0% {
+        opacity: 0;
+        transform: scale(2);
+    }
+	100% {
+        opacity: 1;
+        transform: scale(1);
+    }	
+}
+.hero-photo {
+    z-index: -1;
+    background-image: url(./assets/images/me1.png);	
+    position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    animation: appear 1s cubic-bezier(.5, .6, .6, 1);
+    -webkit-animation: appear 1s cubic-bezier(.5, .6, .6, 1);
+    -moz-animation: appear 1s cubic-bezier(.5, .6, .6, 1);
+    -o-animation: appear 1s cubic-bezier(.5, .6, .6, 1);
+    filter: grayscale();
+}
+.animate-mobile {
+    animation:animate-mobile 1s ease-in-out;
+    animation-fill-mode:backwards;
+}
+.animate-desktop { /* will work on this*/
+    animation:animate-desktop 1s ease-in-out;
+    animation-fill-mode:backwards;
+}
+@keyframes animate-mobile {
+	0% {
+        opacity: 0;
+        
+    }
+	100% {
+        opacity: 1;
+        
+    }	
+}
+@keyframes animate-desktop {
+	0% {
+        opacity: 0;
+        transform: translateX(0%);
+    }
+	100% {
+        opacity: 1;
+        transform: translateX(150px);
+    }	
+}
+.delay02 {
+    animation-delay: .2s;
+}
+.delay04 { 
+    animation-delay: .4s;
+}
+.delay06 { 
+    animation-delay: .6s;
+}
+.delay08 {
+    animation-delay: .8s;
+}
+.delay10 {
+    animation-delay: 1s;
+}
+.delay12 {
+    animation-delay: 1.2s;
+}
+@media screen and (max-width: 280px) {
+    .hero-photo {
+        left: -100%;
+        top: 0%;
+    }
+    .text-large {
+        font-size: 20px;
+    }
+    .greet {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .hero-photo {
+        left: -45%;
+        top: 8%;
+    }
+}
+@media screen and (max-width: 991px) { /* Non_Hoverable */
+    .hero-photo{ 
+        top: 0; 
+        right: 0; 
+        bottom: 0; 
+        left: -55%;
+    }
+}
+@media screen and (min-width: 992px) { /* Hoverable */
+    .mobile, .greet {
+        display: none
+    }
+    #hello::after{
+        content: 'Hello.';
+    }
+    #hello:hover:after{
+        content: 'About';
+    }
+    #iam {
+        margin-left: 25%;
+    }
+    #iam::after{
+        content: 'I am';
+    }
+    #iam:hover:after {
+        content: 'Works';
+    }
+    #buhari{
+        margin-left: 50%;
+    }
+    #buhari::after{
+        content: 'Buhari';
+    }
+    #buhari:hover:after{
+        content: 'Contact';
+    }
+    .text-large {
+        font-size: 100px;
+    }
+    .hero-photo {
+        top: 0; 
+        right: 0; 
+        bottom: 0; 
+        left: 35%;
+    }
+    .desktop{
+        margin-top: 10%;
+    }
+}
+
+/* From About page for about  */
+
+
+.centered {
+    text-align: center;
+}
+.spacer-y {
+    margin-bottom: 130px;
+}
+.card {
+    background-color: white;
+    color: red;
+    border: 5px solid red;
+    border-radius: 15px;
+    width: 75%;
+    padding: 15px;
+    margin: 0 auto;
+}
+.me-photo {
+    background: url(./assets/images/me.jpg) padding-box no-repeat;
+    background-size: cover;
+    width: 120px;
+    height: 120px;
+    margin: -100 auto 0 auto;
+    border: 6px solid red;
+    border-radius: 140px;
+}
+@media all and (min-width: 768px) {
+    .me-photo {
+        margin: auto 0 auto -100;
+    }
+    .card {
+        width: 60%
+    }
+}
+p {
+    font-size: 20px;
+}
+.container {
+    width: 80%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+}
+.underline {
+    background-color: red;
+    height: 3px;
+}
+.w-8 {
+    width: 80%;
+}
+.nmb {
+    margin-bottom: 0px;
+}
+h1,h2,h3,p {
+    color: red;
+}
+li {
+    list-style-type: none;
+    /* color: red; */
+}
+.resume {
+    background: red;
+    color: black;
+    font-size: 18px;
+    width: 90px;
+    border: 2px solid red;
+    border-radius: 5px;
+    animation: wiggle .2s ease;
+}
+@keyframes wiggle {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-5deg);
+    }
+    50%{
+        transform: rotate(5deg);
+    }
+    75%{
+        transform: rotate(-5deg);
+    }
+    100%{
+        transform: rotate(5deg);
+    }
+}

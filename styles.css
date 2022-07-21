@@ -45,6 +45,7 @@ div.mobile {
     z-index: -1;
     background-image: url(./assets/images/me1.png);	
     position: fixed;
+    opacity: 0.5;
     background-size: cover;
     background-repeat: no-repeat; 
     -webkit-background-size: cover;
